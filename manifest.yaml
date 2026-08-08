@@ -26,14 +26,14 @@ spec:
        topologyKey: topology.kubernetes.io/zone
        whenUnsatisfiable: DoNotSchedule
        labelSelector:
-        matchLabels:
-          project: roboshop
+         matchLabels:
+           project: roboshop
      - maxSkew: 1
        topologyKey: topology.kubernetes.io/node
        whenUnsatisfiable: DoNotSchedule
        labelSelector:
-       matchLabels:
-          project: roboshop
+         matchLabels:
+           project: roboshop
      containers:
       - name: nginx
         image: nginx:latest
