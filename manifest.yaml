@@ -33,7 +33,7 @@ spec:
        whenUnsatisfiable: DoNotSchedule
        labelSelector:
        matchLabels:
-         project: roboshop
+          project: roboshop
      containers:
       - name: nginx
         image: nginx:latest
